@@ -1,0 +1,10 @@
+// document.getElementsByClassName("rdw-block-wrapper")[0].addEventListener('click', () => {
+		// 	document.getElementsByClassName("rdw-editor-toolbar")[0].style.overflowX = this.overflowX_value;
+		// 	if (this.overflowX_value == "unset") {
+		// 		this.overflowX_value = "auto";
+		// 	} else {
+		// 		this.overflowX_value = "unset";
+		// 	}
+		// 	document.getElementsByClassName("rdw-editor-toolbar")[0].scrollLeft = document.getElementsByClassName("rdw-editor-toolbar")[0].scrollLeft;
+		// 	// console.log(document.getElementsByClassName("rdw-editor-wrapper")[0].scrollLeft)
+		// })
