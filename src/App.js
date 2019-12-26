@@ -1,5 +1,5 @@
 import React from 'react';
-import { EditorState, ContentState, convertFromHTML, convertToRaw } from 'draft-js';
+import { EditorState, ContentState, convertToRaw } from 'draft-js';
 import { Editor } from 'react-draft-wysiwyg';
 import '../node_modules/react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import draftToHtml from 'draftjs-to-html';
@@ -80,10 +80,8 @@ export default class App extends React.Component {
 		return "";
 	}
 
-	get(options) {																				
+	get(options) {
 		let html = '';
-		// html = draftToHtml(convertToRaw(this.state.editorState.getCurrentContent()));
-		
 		if (options && options.callback) {
 			setTimeout(() => {
 				html = draftToHtml(convertToRaw(this.state.editorState.getCurrentContent()));
